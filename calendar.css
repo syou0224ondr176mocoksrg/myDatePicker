@@ -1,0 +1,106 @@
+/* CSS Document */
+
+.myCalendar{
+	width: 210px;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	background-color: white;
+	line-height: 1em;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:999;
+}
+
+.myCalendar .mycld_c{
+	text-align:center;
+}
+.myCalendar .mycld_r{
+	text-align:right;
+	cursor:pointer;
+	/* border: 0.1px solid black; */
+}
+
+.mycld_wrap .mycld_close{
+	border-top: 1px solid #DDDDDD;
+	height: 20px;
+	line-height: 20px;
+	background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.mycld_wrap .mycld_close:hover{
+	border: 1px solid black;
+}
+  
+/* 上部 年月と月移動リンク */
+/* 一番上の年月の奴 */
+.mycld_wrap .mycld_control{
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+}
+
+/* 左上の左矢印 */
+.mycld_wrap .mycld_control .mycld_clt_l{
+	float: left;
+	text-align: center;
+	width: 20px;
+	cursor: pointer;
+}
+
+/* 上の真ん中の年月 */
+.mycld_wrap .mycld_control .mycld_clt_c{
+	float: left;
+	text-align: center;
+	width: 170px;
+}
+
+/* 右上の矢印 */
+.mycld_wrap .mycld_control .mycld_clt_r{
+	float: right;
+	text-align: center;
+	width: 20px;
+	cursor: pointer;
+}
+
+/* 曜日 */
+.mycld_wrap .mycld_head{
+	overflow: hidden;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+/* 日付展開 */
+.mycld_wrap .mycld_day_wrap{
+	overflow:hidden;
+}
+
+.myCalendar .mycld_days{
+	float: left;
+	width: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: black;
+	text-align: center;
+}
+.mycld_wrap .mycld_c:first-child{
+	color: red;
+}
+.mycld_wrap .mycld_c:last-child{
+	color: blue;
+}
+.myCalendar .mycld_r:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.mycld_clt_l:hover,.mycld_clt_r:hover{
+	background-color: rgba(0, 0, 0, 0.5)!important;
+}
+.myCalendar .mycld_days.sun{
+	color: #f33;
+}
+.myCalendar .mycld_days.sat{
+	color: blue;
+}
